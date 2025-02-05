@@ -3,23 +3,23 @@ This Python-based network application suite implements several fundamental netwo
 The program consists of:  
 
 ICMP Ping (ping):  
-Sends ICMP echo request packets to a target.
-Measures round-trip time (RTT) for each response.
-Works similarly to the Linux ping command.
+Sends ICMP echo request packets to a target.  
+Measures round-trip time (RTT) for each response.  
+Works similarly to the Linux ping command.  
 
 Single-Threaded Traceroute (traceroute):  
-Uses UDP or ICMP probes to trace the network path to a destination.
-Sends packets with increasing Time-To-Live (TTL) to discover intermediate network hops.
+Uses UDP or ICMP probes to trace the network path to a destination.  
+Sends packets with increasing Time-To-Live (TTL) to discover intermediate network hops.  
 
 Multithreaded Traceroute (mtroute):  
-Uses ICMP packets to measure RTT for each hop.
-Runs in parallel using Python threading, sending packets and receiving responses simultaneously.
-Can be used to analyze network delays and intermediate nodes between a source and destination.
+Uses ICMP packets to measure RTT for each hop.  
+Runs in parallel using Python threading, sending packets and receiving responses simultaneously.  
+Can be used to analyze network delays and intermediate nodes between a source and destination.  
 
 Web Proxy (proxy):  
-Intercepts HTTP requests and forwards them to web servers.
-Implements basic caching to store previously requested web pages.
-Supports configurable port binding.
+Intercepts HTTP requests and forwards them to web servers.  
+Implements basic caching to store previously requested web pages.  
+Supports configurable port binding.  
 
 
 Prerequisites:
@@ -32,8 +32,8 @@ Running the Application:
 Note: Some commands, especially those using ICMP packets, may require root (sudo) privileges. If you encounter permission errors, try running them with sudo.
 
 Navigate to the project directory and run:  
-python3 NetworkingToolkit.py --help
-This will display usage information for all available commands.
+python3 NetworkingToolkit.py --help  
+This will display usage information for all available commands.  
 
 Usage examples:
 
@@ -41,7 +41,7 @@ Running the ICMP Ping
 sudo python3 NetworkingToolkit.py ping google.com
 
 Running the Single-Threaded Traceroute  
-sudo python3 NetworkingToolkit.py traceroute -p udp google.com  
+sudo python3 NetworkingToolkit.py traceroute -p udp google.com   
 -p udp uses UDP packets.  
 -p icmp uses ICMP packets.  
 
