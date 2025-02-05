@@ -24,7 +24,7 @@ Supports configurable port binding.
 
 Prerequisites:
 
-Python 3
+Python 3  
 curl (for testing the proxy)
 
 Running the Application:
@@ -41,16 +41,16 @@ Running the ICMP Ping
 sudo python3 NetworkingToolkit.py ping google.com
 
 Running the Single-Threaded Traceroute  
-sudo python3 NetworkingToolkit.py traceroute -p udp google.com
--p udp uses UDP packets.
--p icmp uses ICMP packets. 
+sudo python3 NetworkingToolkit.py traceroute -p udp google.com  
+-p udp uses UDP packets.  
+-p icmp uses ICMP packets.  
 
 Running the ICMP Multithreaded Traceroute  
-sudo python3 NetworkingToolkit.py mtroute -p icmp google.com
+sudo python3 NetworkingToolkit.py mtroute -p icmp google.com 
 
 Running the Web Proxy  
-python3 NetworkingToolkit.py proxy -p 8000
-(Starts the web proxy on port 8000)
-To test it (in a different terminal window):
-curl http://example.com --proxy 127.0.0.1:8000
+python3 NetworkingToolkit.py proxy -p 8000  
+(Starts the web proxy on port 8000)  
+To test it (in a different terminal window):  
+curl http://example.com --proxy 127.0.0.1:8000  
 
