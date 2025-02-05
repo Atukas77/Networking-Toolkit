@@ -1,8 +1,8 @@
 This Python-based network application suite implements several fundamental networking tools, including ping, single-threaded and multithreaded traceroute utility and a web proxy server. The project is designed to enhance practical understanding of network sockets, ICMP/UDP-based networking, and HTTP proxies. It is intended to replicate built-in terminal networking commands.
 
 The program consists of:  
-ICMP Ping (ping):
 
+ICMP Ping (ping):  
 Sends ICMP echo request packets to a target.
 Measures round-trip time (RTT) for each response.
 Works similarly to the Linux ping command.
