@@ -3,25 +3,30 @@ This Python-based network application suite implements several fundamental netwo
 The program consists of:
 
 ICMP Ping (ping)
+
 Sends ICMP echo request packets to a target.
 Measures round-trip time (RTT) for each response.
 Works similarly to the Linux ping command.
 
 Single-Threaded Traceroute (traceroute)
+
 Uses UDP or ICMP probes to trace the network path to a destination.
 Sends packets with increasing Time-To-Live (TTL) to discover intermediate network hops.
 
 Multithreaded Traceroute (mtroute)
+
 Uses ICMP packets to measure RTT for each hop.
 Runs in parallel using Python threading, sending packets and receiving responses simultaneously.
 Can be used to analyze network delays and intermediate nodes between a source and destination.
 
 Web Proxy (proxy)
+
 Intercepts HTTP requests and forwards them to web servers.
 Implements basic caching to store previously requested web pages.
 Supports configurable port binding.
 
 Prerequisites:
+
 Python 3
 curl (for testing the proxy)
 
