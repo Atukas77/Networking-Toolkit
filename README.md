@@ -1,6 +1,6 @@
 This Python-based network application suite implements several fundamental networking tools, including ping, single-threaded and multithreaded traceroute utility and a web proxy server. The project is designed to enhance practical understanding of network sockets, ICMP/UDP-based networking, and HTTP proxies. It is intended to replicate built-in terminal networking commands.
 
-The program consists of:  
+Features:  
 
 ICMP Ping (ping):  
 Sends ICMP echo request packets to a target.  
@@ -21,6 +21,9 @@ Intercepts HTTP requests and forwards them to web servers.
 Implements basic caching to store previously requested web pages.  
 Supports configurable port binding.  
 
+Cloning the repository:  
+git clone https://github.com/Atukas77/Networking-Toolkit.git  
+cd Networking-Toolkit  
 
 Prerequisites:
 
