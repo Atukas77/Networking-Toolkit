@@ -2,8 +2,7 @@ This Python-based network application suite implements several fundamental netwo
 
 The program consists of:
 
-ICMP Ping (ping)
-
+ICMP Ping (ping) 
 Sends ICMP echo request packets to a target.
 Measures round-trip time (RTT) for each response.
 Works similarly to the Linux ping command.
